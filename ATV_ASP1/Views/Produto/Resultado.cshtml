@@ -1,0 +1,52 @@
+﻿@model  ATV_ASP1.Models.Produto
+@{ 
+    ViewBag.Title = "Resultado";
+}
+<h2>Cadastrar Produtos</h2>
+<fieldset>
+    <legend>Dados do Produto</legend>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Codigo)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Descricao)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Peso) 
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Peso) 
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Categoria)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Valor_Unit)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Valor_Unit)
+    </div>
+
+    <p>@Html.ActionLink("Voltar", "Index")</p>
+</fieldset>

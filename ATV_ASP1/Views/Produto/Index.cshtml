@@ -1,0 +1,59 @@
+﻿@model ATV_ASP1.Models.Produto
+@{ 
+    ViewBag.Title = "Index";
+}
+<h2>Cadastrar Produtos</h2>
+@using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>Dados do Produto</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Codigo)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Codigo)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Nome)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Nome)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Descricao)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Descricao)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Peso)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Peso)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Categoria)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Categoria)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Valor_Unit)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Valor_Unit)
+            </div>
+
+            <p><input type="submit" value="Cadastrar"></p>
+        </fieldset>
+        @section Scripts{
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+    }
